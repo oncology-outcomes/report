@@ -1,0 +1,18 @@
+---
+title: My Example Report
+author:
+  - John Doe
+  - Jane Doe
+date: last-modified
+format:
+  report-pdf: default
+  report-html: default
+---
+
+# Introduction
+
+# Methods
+
+# Results
+
+# Summary

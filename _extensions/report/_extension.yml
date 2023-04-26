@@ -1,0 +1,8 @@
+title: Oncology Outcomes Report Format
+author: Oncology Outcomes
+version: 0.0.0.9000
+contributes:
+  formats:
+    common:
+      date-format: full
+      date: last-modified
