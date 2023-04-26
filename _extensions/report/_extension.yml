@@ -1,8 +1,12 @@
 title: Oncology Outcomes Report Format
 author: Oncology Outcomes
-version: 0.0.0.9000
+version: 0.0.1
 contributes:
   formats:
     common:
       date-format: full
       date: last-modified
+    pdf:
+      mainfont: Arial
+    html:
+      theme: style.scss
