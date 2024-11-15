@@ -1,6 +1,6 @@
 # Report Template
 
-This repository contains Quarto templates for standardizing Oncology Outcomes reports. This repository is currently under active development and is liable to change substantially.
+This repository contains a Quarto template for standardizing Oncology Outcomes reports. This repository is currently under active development and is liable to change substantially.
 
 ## Usage
 

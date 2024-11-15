@@ -1,13 +1,12 @@
 ---
-title: My Example Report
-author:
-  - John Doe
-  - Jane Doe
-date: last-modified
-format:
-  report-pdf: default
-  report-html: default
+title: Example report
+format: report-typst
 ---
+
+```{r}
+#| label: setup
+#| include: false
+```
 
 # Introduction
 

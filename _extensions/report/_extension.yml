@@ -1,12 +1,31 @@
-title: Oncology Outcomes Report Format
-author: Oncology Outcomes
+title: Oncology Outcomes Report
+author: Matt Warkentin
 version: 0.0.1
 contributes:
   formats:
-    common:
-      date-format: full
-      date: last-modified
-    pdf:
-      mainfont: Arial
-    html:
-      theme: style.scss
+    typst:
+      font-paths: assets/fonts
+      mainfont: Narin
+      fontsize: 12pt
+      lang: en
+      subtitle: Oncology Outcomes (O2)
+      date: today
+      execute:
+        echo: false
+        warning: false
+        message: false
+      fig-width: 8
+      fig-height: 6
+      fig-dpi: 300
+      default-image-extension: png
+      df-print: paged
+      keep-typ: true
+      template-partials:
+        - typst-template.typ
+        - typst-show.typ
+      filters:
+        - layout.lua
+        - mark.lua
+        - ignore-layout.lua
+      shortcodes:
+        - colbreak.lua
