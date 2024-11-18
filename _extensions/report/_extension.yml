@@ -5,10 +5,6 @@ contributes:
   formats:
     typst:
       font-paths: assets/fonts
-      mainfont: Narin
-      fontsize: 12pt
-      lang: en
-      subtitle: Oncology Outcomes (O2)
       date: today
       execute:
         echo: false
@@ -19,7 +15,10 @@ contributes:
       fig-dpi: 300
       default-image-extension: png
       df-print: paged
-      keep-typ: true
+      toc: true
+      lof: true
+      lot: true
+      keep-typ: false
       template-partials:
         - typst-template.typ
         - typst-show.typ

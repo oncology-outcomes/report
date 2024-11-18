@@ -3,6 +3,7 @@ template.html
 template.log
 template.tex
 template.docx
+template.typ
 template_files/
 .DS_Store
 /.luarc.json

@@ -1,5 +1,5 @@
 ---
-title: Example report
+title: This is an example report
 format: report-typst
 ---
 
