@@ -32,7 +32,7 @@ Below is a list of the report options that can be configured using the YAML fron
 
 ## Known Issues
 
-One of the known issues for moving from LaTeX based PDF genereation to Typst is producing table captions. Using this report Quarto, Typst, and this report template, you have to remember to include labels in the code cells that produce tables. For example, if you were using the following code block to generate a nice table for your report, add the label and table caption using the standard Quarto YAML.
+One of the known issues for moving from LaTeX based PDF genereation to Typst is producing table captions. Using Quarto, Typst, and this report template, you have to remember to include labels in the code cells that produce your tables. For example, if you were using the following code block to generate a nice table for your report, add the label and table caption options using the standard Quarto YAML.
 
 ````
 ```{r}
@@ -42,4 +42,4 @@ generate_table()
 ```
 ````
 
-The label must begin with the `tbl-` prefix so that the table can be properly identified and indexed. Not that we also now use the `tbl-cap` key to provide captions rather than arguments to the table-generating function, such as with `kable()`.
+The label must begin with the `tbl-` prefix so that the table can be properly identified and indexed. Not that we also now use the `tbl-cap` key to provide captions rather than arguments to the table-generating function, such as with `kable()`. Also note that code block labels must be unique.
