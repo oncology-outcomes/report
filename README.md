@@ -29,3 +29,17 @@ Below is a list of the report options that can be configured using the YAML fron
 - `lof-title`: Title of the list of figures. Default is `List of figures`.
 - `lot`: Generate a list of tables. Default is `true`.
 - `lot-title`: Title of the list of tables. Default is `List of tables`.
+
+## Known Issues
+
+One of the known issues for moving from LaTeX based PDF genereation to Typst is producing table captions. Using this report Quarto, Typst, and this report template, you have to remember to include labels in the code cells that produce tables. For example, if you were using the following code block to generate a nice table for your report, add the label and table caption using the standard Quarto YAML.
+
+````
+```{r}
+#| label: tbl-my-sweet-table
+#| tbl-cap: The caption for my sweet table.
+generate_table()
+```
+````
+
+The label must begin with the `tbl-` prefix so that the table can be properly identified and indexed. Not that we also now use the `tbl-cap` key to provide captions rather than arguments to the table-generating function, such as with `kable()`.

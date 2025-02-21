@@ -10,6 +10,21 @@ format: report-typst
 
 # Introduction
 
+This is some text describing the great analysis that I did.
+
+```{r}
+#| fig-cap: "This is a cool figure."
+plot(iris)
+```
+
+Here is some text describing the figure.
+
+```{r}
+#| label: tbl-Something
+#| tbl-cap: "This a less cool table."
+iris[1:5,]
+```
+
 # Methods
 
 # Results
