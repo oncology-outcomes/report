@@ -22,7 +22,7 @@ Here is some text describing the figure.
 ```{r}
 #| label: tbl-Something
 #| tbl-cap: "This a less cool table."
-iris[1:5,]
+iris[1:20,]
 ```
 
 # Methods
