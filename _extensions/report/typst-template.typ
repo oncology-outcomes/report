@@ -163,7 +163,13 @@
     pagebreak(weak: true)
   }
 
+  // Allow tables to break across pages with repeated headers
+  show figure: set block(breakable: true)
+
   body
+
+  // Disable breaking after body of document
+  set block(breakable: false)
 
   // Back page after rest of `doc`
   back_page()
